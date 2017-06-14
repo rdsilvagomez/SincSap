@@ -1,0 +1,7 @@
+c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.exe
+c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.pdb
+c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\obj\x86\Debug\SincronizacionSapCompras.exe
+c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\obj\x86\Debug\SincronizacionSapCompras.pdb
+c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.exe.config
+c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\sapnco.dll
+c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\sapnco_utils.dll

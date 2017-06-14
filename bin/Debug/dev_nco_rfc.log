@@ -1,0 +1,591 @@
+
+**** Log file opened by process 11480 at 2017-02-10 16:31:48 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-10 16:31:48.516 [Thread 9]
+SAP.Middleware.Connector.RfcInvalidParameterException: Inconsistency in destination name:mySAPdestination does not match TGP
+   en SAP.Middleware.Connector.RfcDestinationManager.GetDestination(String destinationName)
+
+**** Log file opened by process 12512 at 2017-02-10 16:33:01 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-10 16:33:02.006 [Thread 10]
+SAP.Middleware.Connector.RfcInvalidParameterException: Inconsistency in destination name:TGPr does not match TGP
+   en SAP.Middleware.Connector.RfcDestinationManager.GetDestination(String destinationName)
+
+**** Log file opened by process 1316 at 2017-02-10 16:34:21 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: c:\users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-10 16:34:21.947 [Thread 9]
+Failure to create pool for destination TGP (ORIGINAL) [NAME=TGP USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=blackbird.tecnoesw.com SYSNR=00 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcLogonException: Nombre o clave de acceso incorrectos (repita la entrada al sistema) ---> SAP.Middleware.Connector.RfcAbapMessageException: Nombre o clave de acceso incorrectos (repita la entrada al sistema)
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   en SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+>> Error entry 2017-02-10 16:34:22.140 [Thread 9]
+[NAME=TGP USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=blackbird.tecnoesw.com SYSNR=00 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcLogonException: Nombre o clave de acceso incorrectos (repita la entrada al sistema) ---> SAP.Middleware.Connector.RfcAbapMessageException: Nombre o clave de acceso incorrectos (repita la entrada al sistema)
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcConnection.ConnectAsClient(RfcDestination destination, Boolean forRepository)
+   en SAP.Middleware.Connector.RfcConnectionPool..ctor(RfcDestination destination, Boolean forRepositoryCalls)
+   en SAP.Middleware.Connector.RfcConnectionPool.GetPool(RfcDestination destination, Boolean forRepository, Boolean create)
+   en SAP.Middleware.Connector.RfcDestination.GetClient(Boolean forRepository)
+   en SAP.Middleware.Connector.RfcDestination.Ping()
+
+**** Log file opened by process 11240 at 2017-02-10 16:44:23 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-10 16:44:23.122 [Thread 10]
+[NAME=TGP USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=blackbird.tecnoesw.com SYSNR=00 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for function ZUS not available: FU_NOT_FOUND: El módulo de funciones ZUS no existe
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataNew(String name)
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2017-02-10 16:44:23.131 [Thread 10]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for function ZUS not available: FU_NOT_FOUND: El módulo de funciones ZUS no existe
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataNew(String name)
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+
+**** Log file opened by process 12064 at 2017-02-11 08:04:06 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-11 08:04:06.570 [Thread 8]
+SAP.Middleware.Connector.RfcInvalidParameterException: Inconsistency in destination name:TGP does not match TGQ
+   en SAP.Middleware.Connector.RfcDestinationManager.GetDestination(String destinationName)
+
+**** Log file opened by process 13936 at 2017-02-11 08:08:34 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-11 08:08:34.333 [Thread 8]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: No RFC authorization for function module BAPI_PR_GETDETAIL.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 15368 at 2017-02-11 08:09:36 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-11 08:09:36.133 [Thread 10]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: No RFC authorization for function module BAPI_PR_GETDETAIL.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 15188 at 2017-02-11 08:20:01 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-11 08:20:01.797 [Thread 8]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: No RFC authorization for function module BAPI_PR_GETDETAIL.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 14204 at 2017-02-11 08:25:42 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-11 08:25:42.319 [Thread 8]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: No RFC authorization for function module BAPI_PR_GETDETAIL.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 2456 at 2017-02-11 08:54:42 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\documents\visual studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.1.56.22, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-02-11 08:54:42.190 [Thread 9]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: No RFC authorization for function module BAPI_PR_GETDETAIL.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 10208 at 2017-04-18 09:50:14 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-18 09:50:14.569 [Thread 9]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: Function module "ZPROVEDORES" cannot be used for 'remote' calls.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 11616 at 2017-04-18 09:51:05 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-18 09:51:05.445 [Thread 10]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for function ZPROVEDORESS not available: FU_NOT_FOUND: El módulo de funciones ZPROVEDORESS no existe
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataNew(String name)
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2017-04-18 09:51:05.458 [Thread 10]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for function ZPROVEDORESS not available: FU_NOT_FOUND: El módulo de funciones ZPROVEDORESS no existe
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataNew(String name)
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+
+**** Log file opened by process 11860 at 2017-04-18 09:51:20 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-18 09:51:20.222 [Thread 10]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: Function module "ZPROVEDORES" cannot be used for 'remote' calls.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 9408 at 2017-04-18 09:53:28 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-18 09:53:28.418 [Thread 10]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: No RFC authorization for function module BAPI_REQUISITION_GETITEMS.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 12068 at 2017-04-18 09:56:16 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-18 09:56:16.551 [Thread 8]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: Function module "ZPROVEDORES" cannot be used for 'remote' calls.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 7416 at 2017-04-18 10:58:13 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-18 10:58:13.535 [Thread 9]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER PRHEADER of FUNCTION BAPI_PR_GETDETAIL (GETTER): cannot convert STRUCTURE BAPIMEREQHEADER into IRfcTable ---> System.InvalidCastException: No se puede convertir un objeto de tipo 'SAP.Middleware.Connector.RfcStructure' al tipo 'SAP.Middleware.Connector.IRfcTable'.
+   en SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcDataContainer`1.GetTable(Int32 index, Boolean create)
+
+**** Log file opened by process 7520 at 2017-04-18 11:05:48 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-18 11:05:48.691 [Thread 8]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for function REQUISITION_ITEMS not available: FU_NOT_FOUND: El módulo de funciones REQUISITION_ITEMS no existe
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataNew(String name)
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2017-04-18 11:05:48.701 [Thread 8]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for function REQUISITION_ITEMS not available: FU_NOT_FOUND: El módulo de funciones REQUISITION_ITEMS no existe
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataNew(String name)
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+
+**** Log file opened by process 1860 at 2017-04-18 14:18:31 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-18 14:18:31.522 [Thread 10]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for function REQUISITION_ITEMS not available: FU_NOT_FOUND: El módulo de funciones REQUISITION_ITEMS no existe
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataNew(String name)
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+>> Error entry 2017-04-18 14:18:31.555 [Thread 10]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for function REQUISITION_ITEMS not available: FU_NOT_FOUND: El módulo de funciones REQUISITION_ITEMS no existe
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadataNew(String name)
+   en SAP.Middleware.Connector.RfcRepository.LookupFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.GetFunctionMetadata(String name)
+   en SAP.Middleware.Connector.RfcRepository.CreateFunction(String name)
+
+**** Log file opened by process 11560 at 2017-04-19 13:51:41 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-19 13:51:41.885 [Thread 10]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcAbapRuntimeException: Function module "ZOFERTA_NEW" cannot be used for 'remote' calls.
+   en SAP.Middleware.Connector.RfcConnection.ThrowRfcErrorMsg()
+   en SAP.Middleware.Connector.RfcConnection.ReadBytes(Byte* buffer, Int32 count)
+   en SAP.Middleware.Connector.RfcConnection.ReadRfcIDBegin(Int32& length)
+   en SAP.Middleware.Connector.RfcConnection.ReadUpTo(RFCGET readState, RfcFunction function, RFCID toRid)
+   en SAP.Middleware.Connector.RfcConnection.RfcReceive(RfcFunction function)
+   en SAP.Middleware.Connector.RfcFunction.RfcDeserialize(RfcConnection conn, IRfcIOStream stream)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn, IRfcIOStream stream, RFCID rid)
+   en SAP.Middleware.Connector.RfcFunction.RfcCallReceive(RfcConnection conn)
+   en SAP.Middleware.Connector.RfcFunction.Invoke(RfcDestination destination)
+
+**** Log file opened by process 2616 at 2017-04-19 14:40:24 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-19 14:40:24.459 [Thread 10]
+[NAME=TGQ USER=RFC_USR PASSWD=******** CLIENT=300 ASHOST=10.1.2.50 SYSNR=50 LANG=ES POOL_SIZE=10]
+SAP.Middleware.Connector.RfcInvalidStateException: metadata for StructureOnly ZBAPIEBANQWD not available: NOT_FOUND: No existe nametab activa para ZBAPIEBANQWD.
+   en SAP.Middleware.Connector.RfcRepository.LookupRecordMetadataNew(String name, RecordType recordType)
+   en SAP.Middleware.Connector.RfcRepository.LookupRecordMetadata(String name, RecordType recordType)
+   en SAP.Middleware.Connector.RfcRepository.GetStructureMetadata(String name)
+
+**** Log file opened by process 5208 at 2017-04-19 15:47:01 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-19 15:47:01.844 [Thread 8]
+SAP.Middleware.Connector.RfcTypeConversionException: FIELD PREQ_DATE of STRUCTURE ZBAPIEBAN (SETTER): cannot convert String into DATE ---> SAP.Middleware.Connector.RfcTypeConversionException: Cannot convert "19/04/2017 03:46:54 p.m." into DATE (yyyyMMdd) ---> System.FormatException: No se puede reconocer la cadena como valor DateTime válido.
+   en System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   en SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcScalarMetadataDate.ConvertString(String value, Object& currentValue)
+   en SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcDataContainer`1.SetValue(Int32 index, String value)
+
+**** Log file opened by process 4108 at 2017-04-19 16:43:25 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-19 16:43:25.849 [Thread 10]
+System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index
+   en System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en SAP.Middleware.Connector.RfcContainerMetadata`1.get_Item(Int32 index)
+>> Error entry 2017-04-19 16:43:25.871 [Thread 10]
+SAP.Middleware.Connector.RfcInvalidParameterException: FUNCTION ZOFERTA_NEW: Access of element's type metadata via index=3 failed ---> SAP.Middleware.Connector.RfcInvalidParameterException: Element metadata access using index=3 on metadata of FUNCTION ZOFERTA_NEW failed ---> System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index
+   en System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en SAP.Middleware.Connector.RfcContainerMetadata`1.get_Item(Int32 index)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcContainerMetadata`1.get_Item(Int32 index)
+   en SAP.Middleware.Connector.RfcDataContainer`1.TypeMetadataAt(Int32 index)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcDataContainer`1.TypeMetadataAt(Int32 index)
+   en SAP.Middleware.Connector.RfcDataContainer`1.GetValue(Int32 index)
+
+**** Log file opened by process 7440 at 2017-04-19 16:47:44 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-19 16:47:45.011 [Thread 10]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER BAPIEBAN of FUNCTION ZOFERTA_NEW (GETTER): cannot convert TABLE [STRUCTURE ZBAPIEBAN] into String
+   en SAP.Middleware.Connector.RfcDataContainer`1.GetString(Int32 index)
+
+**** Log file opened by process 3844 at 2017-04-19 16:48:00 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-19 16:48:00.178 [Thread 10]
+System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index
+   en System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en SAP.Middleware.Connector.RfcContainerMetadata`1.get_Item(Int32 index)
+>> Error entry 2017-04-19 16:48:00.199 [Thread 10]
+SAP.Middleware.Connector.RfcInvalidParameterException: FUNCTION ZOFERTA_NEW: Access of element's type metadata via index=3 failed ---> SAP.Middleware.Connector.RfcInvalidParameterException: Element metadata access using index=3 on metadata of FUNCTION ZOFERTA_NEW failed ---> System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index
+   en System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en SAP.Middleware.Connector.RfcContainerMetadata`1.get_Item(Int32 index)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcContainerMetadata`1.get_Item(Int32 index)
+   en SAP.Middleware.Connector.RfcDataContainer`1.TypeMetadataAt(Int32 index)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en SAP.Middleware.Connector.RfcDataContainer`1.TypeMetadataAt(Int32 index)
+   en SAP.Middleware.Connector.RfcDataContainer`1.GetString(Int32 index)
+
+**** Log file opened by process 7440 at 2017-04-19 16:56:55 (UTC-05:00 Hora est. Pacífico, Sudamérica)
+
+SAP .NET Connector 3.0 with file version 3.0.18.0 running on 64-bit .NET Framework 4.0.30319.42000
+Program: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug\SincronizacionSapCompras.vshost.exe
+Working directory: C:\Users\rsilva\Documents\Visual Studio 2010\Projects\SincronizacionSapCompras\SincronizacionSapCompras\bin\Debug
+Operating system: Windows 7 Professional 64-bit Service Pack 1
+Processor: 4x AMD64 (or x64)
+SAP release: 721, Kernel release: 721, Kernel patch level: 713
+Hostname: CVISBAL, IP address: 10.0.64.59, IP_v6 address: 
+
+Default trace level: None
+
+>> Error entry 2017-04-19 16:56:55.791 [Thread 10]
+SAP.Middleware.Connector.RfcTypeConversionException: PARAMETER BAPIEBAN of FUNCTION ZOFERTA_NEW (GETTER): cannot convert TABLE [STRUCTURE ZBAPIEBAN] into String
+   en SAP.Middleware.Connector.RfcDataContainer`1.GetString(Int32 index)
